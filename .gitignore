@@ -17,6 +17,7 @@ project.lock.json
 
 # Build results
 [Dd]ebug/
+tests/[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -26,9 +27,11 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+/tests/[Oo]bj/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
 
 # Visual Studio 2015
 .vs/
