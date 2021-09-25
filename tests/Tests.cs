@@ -33,7 +33,7 @@ namespace tests
         [TearDown]
         public void TearDown()
         {
-            driver.Close();
+            driver.Quit();
             driver = null;
         }
     }
