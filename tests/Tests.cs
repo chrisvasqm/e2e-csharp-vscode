@@ -1,25 +1,33 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using FluentAssertions;
 
 namespace tests
 {
     public class Tests
     {
         private IWebDriver driver;
-        
+        private DEVPage devPage;
+
         [SetUp]
         public void Setup()
         {
             driver = new ChromeDriver();
-            
-            driver.Navigate().GoToUrl("https://www.google.com");
+
+            devPage = new DEVPage(driver);
         }
 
         [Test]
-        public void Test1()
+        public void Test_CanNavigateToDEV()
         {
-            Assert.Pass();
+            devPage.open();
+
+            const string expected = "https://dev.to/";
+            string actual = driver.Url;
+
+            actual.Should()
+                .Be(expected);
         }
 
         [TearDown]
