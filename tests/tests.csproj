@@ -1,12 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <IsPackable>false</IsPackable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>  
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.2"/>
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1"/>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0"/>
     <PackageReference Include="Selenium.WebDriver" Version="4.0.0-rc1"/>
+    <PackageReference Include="FluentAssertions" Version="6.1.0"/>
   </ItemGroup>
 </Project>
