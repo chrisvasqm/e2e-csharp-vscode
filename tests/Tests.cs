@@ -21,7 +21,7 @@ namespace tests
         }
 
         [Test]
-        public void Test_CanNavigateToDEV()
+        public void DEVPage_WhenOpeningHomePage_ShouldHaveTheRightURL()
         {
             const string expected = "https://dev.to/";
             string actual = driver.Url;
@@ -30,7 +30,7 @@ namespace tests
         }
 
         [Test]
-        public void Test_IsPageLoaded() 
+        public void DEVPage_WhenOpeningHomePage_ShouldLoadTheUI() 
         {
             devPage.isLoaded().Should().BeTrue();
         }
