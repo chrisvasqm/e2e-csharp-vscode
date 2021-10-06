@@ -14,6 +14,7 @@ namespace tests
         public void Setup()
         {
             driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
 
             devPage = new DEVPage(driver);
         }
@@ -26,15 +27,13 @@ namespace tests
             const string expected = "https://dev.to/";
             string actual = driver.Url;
 
-            actual.Should()
-                .Be(expected);
+            actual.Should().Be(expected);
         }
 
         [TearDown]
         public void TearDown()
         {
             driver.Quit();
-            driver = null;
         }
     }
 }
