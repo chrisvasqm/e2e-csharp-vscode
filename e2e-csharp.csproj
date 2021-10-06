@@ -4,11 +4,12 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>e2e_csharp</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>  
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Selenium.WebDriver" Version="4.0.0-rc1"/>
     <PackageReference Include="NUnit" Version="3.13.2"/>
     <PackageReference Include="NUnit3TestAdapter" Version="4.0.0"/>
+    <PackageReference Include="FluentAssertions" Version="6.1.0"/>
   </ItemGroup>
 </Project>
