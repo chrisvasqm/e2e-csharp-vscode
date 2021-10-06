@@ -17,17 +17,22 @@ namespace tests
             driver.Manage().Window.Maximize();
 
             devPage = new DEVPage(driver);
+            devPage.open();
         }
 
         [Test]
         public void Test_CanNavigateToDEV()
         {
-            devPage.open();
-
             const string expected = "https://dev.to/";
             string actual = driver.Url;
 
             actual.Should().Be(expected);
+        }
+
+        [Test]
+        public void Test_IsPageLoaded() 
+        {
+            devPage.isLoaded().Should().BeTrue();
         }
 
         [TearDown]
