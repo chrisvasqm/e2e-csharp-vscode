@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using FluentAssertions;
 
-namespace tests
+namespace e2e_csharp
 {
     public class Tests
     {

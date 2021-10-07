@@ -1,6 +1,6 @@
 using OpenQA.Selenium;
 
-namespace tests
+namespace e2e_csharp
 {
     public class Page
     {
